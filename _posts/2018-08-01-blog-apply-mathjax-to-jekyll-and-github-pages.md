@@ -56,11 +56,13 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 
 #### `_layouts/default.html` 파일의 `<head>`에 아래 내용 삽입
 
-```
+{% raw %}
+```html
 {% if page.use_math %}
   {% include mathjax_support.html %}
 {% endif %}
 ```
+{% endraw %}
 
 #### YAML front-matter 설정
 
@@ -84,18 +86,20 @@ use_math: true
 ```latex
 This formula $f(x) = x^2$ is an example.
 ```
-> 실행 결과:
-This formula $f(x) = x^2$ is an example.
+> This formula $f(x) = x^2$ is an example.
 
 #### `$$...$$`를 활용한 수식 표현
 ```latex
 $$
-i\hbar\frac{\partial}{\partial t}\left|\Psi(t)\right>=H\left|\Psi(t)\right>
+\lim_{x\to 0}{\frac{e^x-1}{2x}}
+\overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
+\lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
 $$
 ```
-> 실행 결과:
-$$
-i\hbar\frac{\partial}{\partial t}\left|\Psi(t)\right>=H\left|\Psi(t)\right>
+> $$
+\lim_{x\to 0}{\frac{e^x-1}{2x}}
+ \overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
+ \lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
 $$
 
 ---
