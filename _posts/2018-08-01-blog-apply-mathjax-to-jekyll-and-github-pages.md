@@ -1,0 +1,105 @@
+---
+title: "Jekyll Github 블로그에 MathJax로 수학식 표시하기"
+tags:
+  - Blog
+  - MathJax
+  - Jekyll
+  - LaTeX
+use_math: true
+---
+
+## MathJax
+[MathJax](https://github.com/mathjax/MathJax)를 사용하면 [Jekyll](https://jekyllrb.com/) Github 블로그에서 수학식 표시 가능
+
+### MathJax 적용 방법
+
+#### 마크다운 엔진 변경
+`_config.yml` 파일의 내용을 아래와 같이 수정
+
+```yml
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+```
+
+#### `mathjax_support.html` 파일 생성
+
+`_includes` 디렉토리에 `mathjax_support.html` 파일 생성 후 아래 내용 입력
+```yml
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$'] ],
+    processEscapes: true,
+  }
+});
+MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
+	  alert("Math Processing Error: "+message[1]);
+	});
+MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
+	  alert("Math Processing Error: "+message[1]);
+	});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+```
+
+#### `_layouts/default.html` 파일의 `<head>`에 아래 내용 삽입
+
+```js
+{% if page.use_math %}
+  {% include mathjax_support.html %}
+{% endif %}
+```
+
+#### YAML front-matter 설정
+
+수학식을 표시할 포스트의 front-matter에 `use_math: true` 적용
+
+```yml
+---
+title: "Jekyll Github 블로그에 MathJax로 수학식 표시하기"
+tags:
+  - Blog
+  - MathJax
+  - Jekyll
+  - LaTeX
+use_math: true
+---
+```
+
+### MathJax를 통한 수학식 표현의 예
+
+- `$...$`를 활용한 인라인 수식 표현
+```latex
+This formula $f(x) = x^2$ is an example.
+```
+> 실행 결과:
+This formula $f(x) = x^2$ is an example.
+
+- `$$...$$`를 활용한 수식 표현
+```latex
+$$
+i\hbar\frac{\partial}{\partial t}\left|\Psi(t)\right>=H\left|\Psi(t)\right>
+$$
+```
+> 실행 결과:
+$$
+i\hbar\frac{\partial}{\partial t}\left|\Psi(t)\right>=H\left|\Psi(t)\right>
+$$
+
+---
+
+## References
+- [Jekyll로 GitHub에 blog 만들기](https://jamiekang.github.io/2017/04/28/blogging-on-github-with-jekyll/)
+- [MathJax, Jekyll and github pages](http://benlansdell.github.io/computing/mathjax/)
