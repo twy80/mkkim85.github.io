@@ -80,14 +80,14 @@ use_math: true
 
 ### MathJax를 통한 수학식 표현의 예
 
-- `$...$`를 활용한 인라인 수식 표현
+#### `$...$`를 활용한 인라인 수식 표현
 ```latex
 This formula $f(x) = x^2$ is an example.
 ```
 > 실행 결과:
 This formula $f(x) = x^2$ is an example.
 
-- `$$...$$`를 활용한 수식 표현
+#### `$$...$$`를 활용한 수식 표현
 ```latex
 $$
 i\hbar\frac{\partial}{\partial t}\left|\Psi(t)\right>=H\left|\Psi(t)\right>
