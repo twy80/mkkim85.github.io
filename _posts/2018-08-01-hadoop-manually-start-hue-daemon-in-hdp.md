@@ -38,9 +38,11 @@ tags:
 ### 1.	Supervisor를 통한 HUE 데몬 시작하기
 
 - HUE가 설치된 디렉토리로 이동 (예: `/usr/local/hue`)
+
 ```shell
 /usr/local/hue/build/env/bin/supervisor -d
 ```
+
 - `-d`: HUE 데몬 시작 옵션
 
 ### 2.	HUE 데몬 정지 (프로세스 죽이기)
@@ -50,7 +52,9 @@ ps-ef | grep hue  # PID 확인
 kill -9 <PID>
 ```
 
-### 3.	HUE 데몬 재시작 2번 과정 수행 후 1번 과정 수행
+### 3.	HUE 데몬 재시작
+
+- 2번 과정 $\rightarrow$ 1번 과정 수행
 
 ---
 
