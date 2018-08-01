@@ -28,7 +28,7 @@ incremental: false
 #### `mathjax_support.html` 파일 생성
 
 `_includes` 디렉토리에 `mathjax_support.html` 파일 생성 후 아래 내용 입력
-```yml
+```html
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     TeX: {
