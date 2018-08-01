@@ -9,16 +9,20 @@ tags:
 ---
 
 ## 방법 1
-> `/etc/init.d/hue`가 있는 경우는 아래 방법을 사용
+
+`/etc/init.d/hue`가 있는 경우는 아래 방법을 사용
+{: .notice--warning}
 
 ### 1.	HUE 데몬 시작 명령
 ```shell
 /etc/init.d/hue start
 ```
+
 ### 2.	HUE 데몬 정지 명령
 ```shell
 /etc/init.d/hue stop
 ```
+
 ### 3.	HUE 데몬 재시작 명령
 ```shell
 /etc/init.d/hue restart
@@ -27,19 +31,25 @@ tags:
 ---
 
 ## 방법 2: Supervisor 활용
-> 만약 `/etc/init.d/hue`가 없는 경우는 아래 방법을 사용
+
+만약 `/etc/init.d/hue`가 없는 경우는 아래 방법을 사용
+{: .notice--warning}
 
 ### 1.	Supervisor를 통한 HUE 데몬 시작하기
+
 - HUE가 설치된 디렉토리로 이동 (예: `/usr/local/hue`)
 ```shell
 /usr/local/hue/build/env/bin/supervisor -d
 ```
 - `-d`: HUE 데몬 시작 옵션
+
 ### 2.	HUE 데몬 정지 (프로세스 죽이기)
+
 ```shell
 ps-ef | grep hue  # PID 확인
 kill -9 <PID>
 ```
+
 ### 3.	HUE 데몬 재시작 2번 과정 수행 후 1번 과정 수행
 
 ---
