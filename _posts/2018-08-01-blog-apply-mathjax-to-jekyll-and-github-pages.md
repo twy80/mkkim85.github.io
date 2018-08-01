@@ -56,7 +56,7 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 
 #### `_layouts/default.html` 파일의 `<head>`에 아래 내용 삽입
 
-```html
+```
 {% if page.use_math %}
   {% include mathjax_support.html %}
 {% endif %}
