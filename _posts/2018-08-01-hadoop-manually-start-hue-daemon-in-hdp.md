@@ -51,7 +51,7 @@ kill -9 <PID>
 
 ### 3.	HUE 데몬 재시작
 
-- 2번 과정 $\rightarrow$ 1번 과정 수행
+- 2번 과정 $ \rightarrow $ 1번 과정 수행
 
 ---
 
