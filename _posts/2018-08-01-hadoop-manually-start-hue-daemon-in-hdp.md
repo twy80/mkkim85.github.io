@@ -6,6 +6,7 @@ tags:
   - CentOS
   - HDP
   - HUE
+use_math: true
 ---
 
 ## 방법 1
