@@ -16,7 +16,7 @@ use_math: true
 #### 마크다운 엔진 변경
 `_config.yml` 파일의 내용을 아래와 같이 수정
 
-```yml
+```yml {.line-numbers}
 # Conversion
 markdown: kramdown
 highlighter: rouge
@@ -28,7 +28,7 @@ incremental: false
 #### `mathjax_support.html` 파일 생성
 
 `_includes` 디렉토리에 `mathjax_support.html` 파일 생성 후 아래 내용 입력
-```html
+```html {.line-numbers}
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     TeX: {
@@ -54,10 +54,10 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 </script>
 ```
 
-#### `_layouts/default.html` 파일의 `<head>`에 아래 내용 삽입
+#### `_layouts/default.html` 파일의 `<head>` 부분에 아래 내용 삽입
 
 {% raw %}
-```html
+```html {.line-numbers}
 {% if page.use_math %}
   {% include mathjax_support.html %}
 {% endif %}
@@ -68,7 +68,7 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 
 수학식을 표시할 포스트의 front-matter에 `use_math: true` 적용
 
-```yml
+```yml {.line-numbers}
 ---
 title: "Jekyll Github 블로그에 MathJax로 수학식 표시하기"
 tags:
@@ -83,13 +83,13 @@ use_math: true
 ### MathJax를 통한 수학식 표현의 예
 
 #### `$...$`를 활용한 인라인 수식 표현
-```latex
+```latex {.line-numbers}
 This formula $f(x) = x^2$ is an example.
 ```
 > This formula $f(x) = x^2$ is an example.
 
 #### `$$...$$`를 활용한 수식 표현
-```latex
+```latex {.line-numbers}
 $$
 \lim_{x\to 0}{\frac{e^x-1}{2x}}
 \overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}

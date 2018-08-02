@@ -42,7 +42,7 @@ Hive 쿼리 실행 결과 출력 파일 수에 대한 설정
 
 아래 설정을 적용하여 Hive 쿼리 수행 후 많은 수로 생성된 결과 파일들을 병합
 
-```xml
+```xml {.line-numbers}
 hive.merge.mapredfiles=true (default: false)
 hive.merge.mapfiles=true (default: true)
 hive.merge.size.per.task=256000000 (default: 256000000)
@@ -62,7 +62,7 @@ hive.merge.smallfiles.avgsize=200000000 (default: 16000000)
 
 압축을 활용하여 파일 처리 성능 향상
 
-```xml
+```xml {.line-numbers}
 hive.exec.compress.intermediate=true
 hive.intermediate.compression.codec=org.apache.hadoop.io.compress.GzipCodec
 hive.intermediate.compression.type=BLOCK
