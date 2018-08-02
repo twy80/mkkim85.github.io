@@ -1,5 +1,6 @@
 ---
 title: "HDP에서 수동으로 HUE 데몬 시작하기"
+date: "2018-08-01 12:00:00 +0900"
 tags:
   - Hadoop
   - Apache Ambari
