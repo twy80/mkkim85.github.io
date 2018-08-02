@@ -8,10 +8,10 @@ tags:
 use_math: true
 ---
 
-  [Hive](https://hive.apache.org/)로 여러개의 테이블을 생성해서 사용하다보면 어느 순간 쿼리 실행 시간이 늘어나는 현상 발생  
-
-HDFS에서 관련 테이블을 찾아보면 수 많은 파일들로 인해서 성능이 느려진것을 알 수 있음  
-
+[Hive](https://hive.apache.org/)로 여러개의 테이블을 생성해서 사용하다보면 어느 순간 쿼리 실행 시간이 늘어나는 현상 발생
+{: .notice--warning}
+HDFS에서 관련 테이블을 찾아보면 수 많은 파일들로 인해서 성능이 느려진것을 알 수 있음
+{: .notice--warning}
 특히 실시간 로그 데이터를 Hive 테이블에 삽입 하다보면 기하급수적으로 파일 숫자가 늘어나서 문제가 될 수 있음
 {: .notice--warning}
 
@@ -47,8 +47,8 @@ hive.merge.size.per.task=256000000 (default: 256000000)
 hive.merge.smallfiles.avgsize=200000000 (default: 16000000)
 ```
 
-출력 파일들의 평균 크기가 `hive.merge.smallfiles.avgsize` 보다 작으면 병합  
-
+출력 파일들의 평균 크기가 `hive.merge.smallfiles.avgsize` 보다 작으면 병합
+{: .notice--info}
 합병된 파일의 최대 크기는 `hive.merge.size.per.task` 의 설정 값을 따름
 {: .notice--info}
 
