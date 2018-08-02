@@ -45,8 +45,8 @@ hive.merge.size.per.task=256000000 (default: 256000000)
 hive.merge.smallfiles.avgsize=200000000 (default: 16000000)
 ```
 
-출력 파일들의 평균 크기가 `hive.merge.smallfiles.avgsize` 보다 작으면 병합    
-합병된 파일의 최대 크기는 `hive.merge.size.per.task` 의 설정 값을 따름
+* 출력 파일들의 평균 크기가 `hive.merge.smallfiles.avgsize` 보다 작으면 병합    
+* 합병된 파일의 최대 크기는 `hive.merge.size.per.task` 의 설정 값을 따름
 {: .notice--info}
 
 ### 중간 결과 파일 압축 설정
