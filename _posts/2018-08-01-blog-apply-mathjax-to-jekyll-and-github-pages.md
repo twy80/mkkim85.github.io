@@ -60,7 +60,7 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 #### `_layouts/default.html` 파일의 `<head>` 부분에 아래 내용 삽입
 
 {% raw %}
-```html {.line-numbers}
+```html
 {% if page.use_math %}
   {% include mathjax_support.html %}
 {% endif %}
@@ -90,9 +90,7 @@ use_math: true
 ```latex
 This formula $f(x) = x^2$ is an example.
 ```
-
-This formula $f(x) = x^2$ is an example.
-{: .notice--success}
+> This formula $f(x) = x^2$ is an example.
 
 #### `$$...$$`를 활용한 수식 표현
 
@@ -103,13 +101,11 @@ $$
 \lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
 $$
 ```
-
-$$
+> $$
 \lim_{x\to 0}{\frac{e^x-1}{2x}}
  \overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
  \lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
 $$
-{: .notice--success}
 
 ---
 
