@@ -9,14 +9,16 @@ use_math: true
 ---
 
 ## MathJax
+
 [MathJax](https://github.com/mathjax/MathJax)를 사용하면 [Jekyll](https://jekyllrb.com/) Github 블로그에서 수학식 표시 가능
 
 ### MathJax 적용 방법
 
 #### 마크다운 엔진 변경
+
 `_config.yml` 파일의 내용을 아래와 같이 수정
 
-```yml {.line-numbers}
+```yml
 # Conversion
 markdown: kramdown
 highlighter: rouge
@@ -28,7 +30,8 @@ incremental: false
 #### `mathjax_support.html` 파일 생성
 
 `_includes` 디렉토리에 `mathjax_support.html` 파일 생성 후 아래 내용 입력
-```html {.line-numbers}
+
+```html
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     TeX: {
@@ -68,7 +71,7 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 
 수학식을 표시할 포스트의 front-matter에 `use_math: true` 적용
 
-```yml {.line-numbers}
+```yml
 ---
 title: "Jekyll Github 블로그에 MathJax로 수학식 표시하기"
 tags:
@@ -83,24 +86,30 @@ use_math: true
 ### MathJax를 통한 수학식 표현의 예
 
 #### `$...$`를 활용한 인라인 수식 표현
-```latex {.line-numbers}
+
+```latex
 This formula $f(x) = x^2$ is an example.
 ```
-> This formula $f(x) = x^2$ is an example.
+
+This formula $f(x) = x^2$ is an example.
+{: .notice--success}
 
 #### `$$...$$`를 활용한 수식 표현
-```latex {.line-numbers}
+
+```latex
 $$
 \lim_{x\to 0}{\frac{e^x-1}{2x}}
 \overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
 \lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
 $$
 ```
-> $$
+
+$$
 \lim_{x\to 0}{\frac{e^x-1}{2x}}
  \overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
  \lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
 $$
+{: .notice--success}
 
 ---
 
