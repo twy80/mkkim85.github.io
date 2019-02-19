@@ -23,8 +23,8 @@ use_math: true
 Anaconda Prompt 실행 후 아래 명령을 차례대로 입력하여 패키지 업데이트
 
 ```
-conda update -n  base Anaconda
-conda update --installation
+conda update -n base conda
+conda update --all
 ```
 
 ## TensorFlow 설치
