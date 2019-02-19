@@ -11,13 +11,11 @@ use_math: true
 ## Anaconda 설치
 [다운로드 페이지](https://www.anaconda.com/distribution/)에서 아래 이미지처럼 윈도우 버튼을 클릭하고 Python 3.x 버전을 다운로드하고 설치
 
-{%
-include figure
-image_path="/assets/images/2019-02-19-install-tensorflow/anaconda.png"
-%}
+<figure>
+<img src="/assets/images/2019-02-19-install-tensorflow/anaconda.png">
+</figure>
 
 ## Anaconda 및 Python 패키지 업데이트
-
 <figure>
 <img src="/assets/images/2019-02-19-install-tensorflow/anaconda-prompt.png" style="width:392px">
 </figure>
