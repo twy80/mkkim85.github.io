@@ -12,7 +12,7 @@ use_math: true
 [다운로드 페이지](https://www.anaconda.com/distribution/)에서 아래 이미지처럼 윈도우 버튼을 클릭하고 Python 3.x 버전을 다운로드하고 설치
 
 <figure>
-<img src="/assets/images/2019-02-19-install-tensorflow/anaconda.png">
+<img src="/assets/images/2019-02-19-install-tensorflow/anaconda-download.png">
 </figure>
 
 ## Anaconda 및 Python 패키지 업데이트
