@@ -67,7 +67,7 @@ model.fit(x_train, y_train, epochs=5)
 model.evaluate(x_test, y_test)
 ```
 
-TensorFlow 설치가 정상적으로 설치되었다면 아래와 같은 실행 결과가 출력
+TensorFlow가 정상적으로 설치되었다면 아래와 같은 실행 결과가 출력
 
 {%
 include figure
