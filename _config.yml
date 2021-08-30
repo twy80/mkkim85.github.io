@@ -134,16 +134,9 @@ author:
 
 # Site Footer
 footer:
-  links:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "Youtube"
-      icon: "fab fa-fw fa-youtube"
-      # url:
+  facebook         : "twy80"
+  github           : "twy80"
+  youtube          : "https://www.youtube.com/channel/UCMld9uGqmFTaOatzukREKzQ"
 
 
 # Reading Files
