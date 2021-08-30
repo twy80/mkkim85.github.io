@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "Tae-Woong Yoon"
   avatar           : "/assets/images/bio-photo.jpg" #"/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "IT's All About the Data."
+  bio              : "This is experimental."
   location         : "Korea"
   email            : yoon.tw@gmail.com
   uri              :
