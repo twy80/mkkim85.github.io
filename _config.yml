@@ -19,7 +19,7 @@ locale                   : "ko"
 title                    : "Experimental Site"
 title_separator          : "-"
 name                     : "Tae-Woong Yoon"
-description              : "IT's All About the Data."
+description              : "Miscellaneous stories."
 url                      : "https://twy80.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "twy80/twy80.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -129,7 +129,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : "https://www.youtube.com/channel/UCMld9uGqmFTaOatzukREKzQ"
 
 
 # Reading Files
