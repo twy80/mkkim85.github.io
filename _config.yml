@@ -103,7 +103,7 @@ author:
   name             : "Tae-Woong Yoon"
   avatar           : "/assets/images/bio-photo.jpg" #"/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "This is experimental."
-  location         : "Korea"
+  location         : "Rep. of Korea"
   email            : yoon.tw@gmail.com
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
