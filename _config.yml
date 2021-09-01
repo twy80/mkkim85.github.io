@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko"
-title                    : "TWY's notes"
+title                    : "TWY's Notes"
 title_separator          : "-"
-name                     : "윤태웅(T.-W. Yoon)"
+name                     : ""
 description              : "Miscellaneous stories."
 url                      : "https://twy80.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -100,7 +100,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Tae-Woong Yoon"
+  name             : "윤태웅(T.-W. Yoon)"
   avatar           : "/assets/images/bio-photo.jpg" #"/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
   location         : "Rep. of Korea"
