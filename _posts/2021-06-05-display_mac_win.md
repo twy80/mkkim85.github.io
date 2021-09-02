@@ -9,28 +9,34 @@ tags:
 use_math: true
 ---
 
+## 서피스 프로와 M1 맥북 에어
+
 펜(pen)이 있는 서피스와 팬(fan)이 없는 M1 맥북 에어를 번갈아 사용하고 있습니다. 물론 서로 다른 장단점이 있는데요, 우스갯소리를 섞어(안 웃기면 어떡하지요?) 말하면 서피스의 약점은 OS가 윈도라는 데 있다 할 수 있겠습니다. 그만큼 맥 OS가 윈도보다 제겐 더 매력적이란 뜻이기도 하겠지만, 또 다른 한편으론 서피스가 탁월한 태블릿이란 이야기도 되겠다 싶습니다. 윈도와 맥은 고해상도 디스플레이(HiDPI)를 다루는 방식도 다릅니다.
+
+## 고해상도 디스플레이와 화면 배율
 
 맥북에어는 화면 크기가 13.3인치고, 해상도가 2560x1600입니다. DPI(Dots Per Inch) 값이 227인 셈이지요. 12.3인치의 화면에 2736x1824개의 픽셀을 담은 서피스(267 DPI)보다는 조금 낮지만, 맥북에어도 해상도는 꽤 크다 할 수 있습니다. 그런데 맥 OS는 사용자가 해상도를 높이면 그만큼 글씨가 작아집니다. 윈도에서처럼 화면 배율을 사용자가 조정해 해상도를 키워도 글씨 크기가 유지되도록 할 수는 없어 보입니다.
 
 <center><figure>
-    <img src="https://twy80.github.io/assets/images/display_win1.jpg">    
+    <img src="/assets/images/display_win1.jpg">    
     <figcaption>그림 1. 윈도 배율 설정</figcaption>
 </figure></center>
 
 그러다 보니 13.3인치 맥북에어에선 2560x1600 대신 1440x900이나 1680x1050로 해상도를 설정해 쓰더군요. 1440x900이나 1680x1050의 데이터를 어떻게 2560x1600로 변환해 화면에 뿌리는지는 정확히 알지 못합니다만, 어떻든 좀 억울한 상황인 듯합니다. 2560x1920짜리 이미지를 서피스와 맥북에어에서 각각 열고, 화면에 맞추는 대신 실제 크기로 나타내게 해보았습니다. 아래 그림 2와 3에 나오듯 서피스 화면 안으론 사진이 다 들어왔습니다만, 맥북에선 일부만 보였습니다. 맥북에서 사용한 해상도가 이 경우 1440x900이었기 때문입니다.
 
 <center><figure>
-    <img src="https://twy80.github.io/assets/images/display_win2.jpg">    
+    <img src="/assets/images/display_win2.jpg">    
     <figcaption>그림 2. 윈도 화면</figcaption>
 </figure></center>
 
 <center><figure>
-    <img src="https://twy80.github.io/assets/images/display_mac.png">    
+    <img src="/assets/images/display_mac.png">    
     <figcaption>그림 3. 맥 화면</figcaption>
 </figure></center>
 
 고해상도 모니터를 다루는 방식은 윈도가 맥보다 나은 듯싶기도 하지요? 그렇지만 이야기가 그렇게 간단하지 않습니다.
+
+## 복잡한 윈도와 단순하 맥 OS
 
 맥 OS에선 프로그램(앱)들이 디스플레이의 개별 픽셀을 직접 건드리지 못합니다. 말씀드린 대로 제 맥북은 화소가 2560x1600개 있는데, 기본 해상도는 1440x900입니다. 앱은 이 기본 해상도를 그냥 그대로 사용하거나 200%로 확대해 2880x1800의 픽셀로 만들어 맥 OS에 보냅니다. 실제 화소가 얼마나 되는지 알지 못한 채 말입니다. 그렇게 프로그램에게서 받은 2880x1880의 데이터를 OS는 다시 2560x1600개로 줄여 화면에 뿌리는 거지요. 요컨대 앱은 모니터 화소 수에 관한 정보 없이 100%와 200%라는 두 가지 고정 배율로 화면을 구성해 OS에 전하고, OS는 이를 다시 (하드웨어에 따라) 70~90%로 축소하는 방식입니다. (사용자가 해상도 설정을 바꿔도 상황은 마찬가지입니다.) 이상하지요? 참고로 윈도우에서는 앱이 디스플레이의 화소 수와 사용자 지정 배율(100, 125, ..., 175, 200, 225, 250, 275, 300% 가운데 하나)을 참고해 화면을 제대로 구성할 수 있습니다. 개발자가 코딩을 완벽하게 한다면 말입니다.
 
@@ -39,29 +45,29 @@ use_math: true
 그림 4는 spyder라는 파이썬 관련 앱을 띄운 모습입니다. 위쪽에 있는 도구 아이콘이 맥북 화면인 그림 5에 비해 작다는 점을 확인하실 수 있을 겁니다.
 
 <center><figure>
-    <img src="https://twy80.github.io/assets/images/Surface_python.png">    
+    <img src="/assets/images/Surface_python.png">    
     <figcaption>그림 4. 윈도 스파이더 화면</figcaption>
 </figure></center>
 
 <center><figure>
-    <img src="https://twy80.github.io/assets/images/Air_m1_python.png">    
+    <img src="/assets/images/Air_m1_python.png">    
     <figcaption>그림 5. 맥 스파이더 화면</figcaption>
 </figure></center>
 
 그림 6은 킨들 앱인데요, 컴퓨터 코드를 나타내는 글꼴이 맥북 화면인 그림 7에 견줘 너무 가늡니다. 그림 4의 도구 아이콘과 그림 6의 글꼴이 충분히 확대되지 못했음을 엿볼 수 있습니다. 서피스에서도 킨들 앱 대신 브라우저(클라우드 리더)로 똑같은 전자책을 펼치면 읽기가 더 좋습니다(그림 6). 킨들 앱보다 브라우저가 더 잘 코딩된 까닭이겠지요.
 
 <center><figure>
-    <img src="https://twy80.github.io/assets/images/Surface_kindle.png">    
+    <img src="/assets/images/Surface_kindle.png">    
     <figcaption>그림 6. 윈도 킨들 화면</figcaption>
 </figure></center>
 
 <center><figure>
-    <img src="https://twy80.github.io/assets/images/Air_m1_kindle.png">    
+    <img src="/assets/images/Air_m1_kindle.png">    
     <figcaption>그림 7. 맥 킨들 화면</figcaption>
 </figure></center>
 
 <center><figure>
-    <img src="https://twy80.github.io/assets/images/Surface_kindle_cloud.png">    
+    <img src="/assets/images/Surface_kindle_cloud.png">    
     <figcaption>그림 8. 윈도 클라우드 킨들 화면</figcaption>
 </figure></center>
 
