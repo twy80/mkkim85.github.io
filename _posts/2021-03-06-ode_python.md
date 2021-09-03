@@ -24,7 +24,7 @@ use_math: true
 
 ![](https://twy80.github.io/assets/images/Ode_python.png)
 
-사진에서 rk45와 lsoda는 3(solve_ivp), ode는 2에서 lsoda를 선택한 결과입니다. 1은 그냥 odeint라 적었고요. 보시다시피 odeint가 제일 낫습니다.
+이 그림에서 rk45와 lsoda는 3(solve_ivp), ode는 2에서 lsoda를 선택한 결과입니다. 1은 그냥 odeint라 적었고요. 보시다시피 odeint가 제일 낫습니다.
 
 ## 여전히 odeint!
 
