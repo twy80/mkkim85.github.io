@@ -17,22 +17,22 @@ use_math: true
 
 맥북에어는 화면 크기가 13.3인치고, 해상도가 2560x1600입니다. DPI(Dots Per Inch) 값이 227이지요. 12.3인치의 화면에 2736x1824개의 픽셀을 담은 서피스(267 DPI)보다는 조금 낮지만, 맥북에어도 해상도는 꽤 크다 할 수 있습니다. 그런데 맥 OS는 사용자가 해상도를 높이면 그만큼 글씨가 작아집니다. 윈도우에서처럼 화면 배율을 사용자가 조정해 해상도를 키워도 글씨 크기가 유지되도록 할 수는 없어 보입니다.
 
-<center>
+<center><figure>
     <img src="/assets/images/display_win1.jpg">    
     <figcaption>그림 1. 윈도우 배율 설정</figcaption>
-</center>
+</figure></center>
 
 그러다 보니 13.3인치 맥북에어에선 2560x1600 대신 1440x900이나 1680x1050로 해상도를 설정해 쓰더군요. 1440x900이나 1680x1050의 데이터를 어떻게 2560x1600로 변환해 화면에 뿌리는지는 정확히 알지 못합니다만, 어떻든 좀 억울한 상황인 듯합니다. 2560x1920짜리 이미지를 서피스와 맥북에어에서 각각 열고, 화면에 맞추는 대신 실제 크기로 나타내게 해보았습니다. 아래 그림 2와 3에 나오듯 서피스 화면 안으론 사진이 다 들어왔습니다만, 맥북에선 일부만 보였습니다. 맥북에서 사용한 해상도가 이 경우 1440x900이었기 때문입니다. 또 줌(Zoom)으로 강의하며 화면을 녹화해도 서피스에선 동영상의 해상도가 2736x1824로 나오지만 맥에선 1440x900였습니다. 영상은 따로 붙이지 않겠습니다만, 이것도 마찬가지 문제라 할 수 있겠지요.
 
-<center>
+<center><figure>
     <img src="/assets/images/display_win2.jpg">    
     <figcaption>그림 2. 윈도우 화면</figcaption>
-</center>
+</figure></center>
 
-<center>
+<center><figure>
     <img src="/assets/images/display_mac.png">    
     <figcaption>그림 3. 맥 화면</figcaption>
-</center>
+</figure></center>
 
 여기까지만 보면 고해상도 모니터를 다루는 방식은 윈도우가 맥보다 나은 듯싶기도 합니다. 그런데 이야기가 그렇게 간단하지 않습니다.
 
@@ -44,31 +44,31 @@ use_math: true
 
 그림 4는 spyder라는 파이썬 관련 앱을 띄운 모습입니다. 위쪽에 있는 도구 아이콘이 맥북 화면인 그림 5에 비해 작다는 점을 확인하실 수 있을 겁니다.
 
-<center>
+<center><figure>
     <img src="/assets/images/Surface_python.png">    
     <figcaption>그림 4. 윈도우 스파이더 화면</figcaption>
-</center>
+</figure></center>
 
-<center>
+<center><figure>
     <img src="/assets/images/Air_m1_python.png">    
     <figcaption>그림 5. 맥 스파이더 화면</figcaption>
-</center>
+</figure></center>
 
 그림 6은 킨들 앱인데요, 컴퓨터 코드를 나타내는 글꼴이 맥북 화면인 그림 7에 견줘 너무 가늡니다. 그림 6의 글꼴이 충분히 확대되지 못한 결과입니다. (그림 4의 도구 아이콘도 마찬가지고요.) 서피스에서도 킨들 앱 대신 브라우저(클라우드 리더)로 똑같은 전자책을 펼치면 읽기가 더 좋습니다(그림 8). 킨들 앱보다 브라우저가 더 잘 코딩된 까닭이겠지요.
 
-<center>
+<center><figure>
     <img src="/assets/images/Surface_kindle.png">    
     <figcaption>그림 6. 윈도우 킨들 화면</figcaption>
-</center>
+</figure></center>
 
-<center>
+<center><figure>
     <img src="/assets/images/Air_m1_kindle.png">    
     <figcaption>그림 7. 맥 킨들 화면</figcaption>
-</center>
+</figure></center>
 
-<center>
+<center><figure>
     <img src="/assets/images/Surface_kindle_cloud.png">    
     <figcaption>그림 8. 윈도우 클라우드 킨들 화면</figcaption>
-</center>
+</figure></center>
 
 요컨대 이렇습니다. 완벽한 프로그램이라면 윈도우 앱이 고해상도 모니터를 더 잘 다룰 수 있습니다. 하지만 제대로 만들지 못한 프로그램에선 보기 불편한 화면이 나올 수도 있답니다. 맥은 최선 대신 차선을 선택해 이런 문제가 생기지 않게 했고요. 그리고 이와 같은 최선과 차선의 차이를 인지하기는 쉽지 않습니다. 결국 애플의 판단이 현명했다 할 수 있을까요?
