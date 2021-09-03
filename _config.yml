@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Tae-Woong Yoon"
-  avatar           : "/assets/images/bio-photo.jpg" #"/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo1.png"
   bio              : ""
   location         : "Rep. of Korea"
   email            : yoon.tw@gmail.com
