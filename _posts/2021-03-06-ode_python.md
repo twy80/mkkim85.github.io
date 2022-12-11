@@ -24,7 +24,7 @@ use_math: true
 
 ![](/assets/images/Ode_python.png)
 
-이 그림에서 rk45와 lsoda는 3(solve_ivp), ode는 2에서 lsoda를 선택한 결과입니다. 1은 그냥 odeint라 적었고요. 보시다시피 odeint가 제일 낫습니다.
+이 그림에서 rk45와 lsoda는 3(solve_ivp), ode는 2에서 lsoda를 선택한 결과입니다. 1은 그냥 odeint라 적었고요. 보시다시피 odeint가 제일 낫습니다. 물론 solve_ivp 같은 알고리즘에서도 rtol이나 atol 같은 파라미터를 기본값(1e-6?)보다 작게 잡으면 오차는 줄어들겠지만, 그만큼 계산 시간은 더 길어질 것입니다.
 
 ## 여전히 odeint!
 
