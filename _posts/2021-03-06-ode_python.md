@@ -37,4 +37,4 @@ use_math: true
 1) odeint를 사용한다.
 2) odeint에서 경고 메시지(warning)가 나오면, solve_ivp를 선택한다.
 
-**참고:** odeint를 이용한 시뮬레이션은 [여기서](https://twy80-toys-home-3xaua9.streamlit.app/Differential_Eq) 보실 수 있습니다.
+**참고:** odeint를 이용한 시뮬레이션 결과는 [여기서](https://twy80-toys-home-3xaua9.streamlit.app/Differential_Eq) 보실 수 있습니다.
