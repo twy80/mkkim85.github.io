@@ -100,9 +100,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Tae-Woong Yoon"
+  name             : "TWY's playground"
   avatar           : "/assets/images/bio-photo1.png"
-  bio              : ""
+  bio              : "TWY teaches engineering mathematics, signals and systems, technical writing, etc., at Korea University."
   location         : "Rep. of Korea"
   email            : yoon.tw@gmail.com
   uri              :
