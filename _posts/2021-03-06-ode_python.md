@@ -34,7 +34,7 @@ use_math: true
 
 미분방정식의 우변이 빠르게 바뀌거나 심지어 불연속적으로 변하는 상태(stiff equation)가 반복되면, odeint는 어려움을 겪을 수 있습니다. 이럴 땐 시간 간격을 좁히거나 mxstep의 값을 크게 잡아주어야 합니다. 그러면 계산 시간이 짧다는 odeint의 장점을 잃게 돼, lsoda 이외의 다른 해법도 함께 제공되는 solve_ivp를 사용하는 편이 더 나을 수 있습니다. 따라서 저의 지침은 이렇습니다.
 
-1) odeint를 사용한다.
-2) odeint에서 경고 메시지(warning)가 나오면, solve_ivp를 선택한다.
+1. odeint를 사용한다.
+2. odeint에서 경고 메시지(warning)가 나오면, solve_ivp를 선택한다.
 
 **참고:** odeint를 이용한 시뮬레이션 결과는 [여기서](https://twy80-toys-home-3xaua9.streamlit.app/Differential_Eq) 보실 수 있습니다.
